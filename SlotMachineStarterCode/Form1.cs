@@ -189,6 +189,9 @@ namespace SlotMachineStarterCode
                 // Hint B
                 // If the timer stops, the spin is over, we should calculate our winnings
                 // call the calculateWinnings function
+                pictureBox1.Image = seven;
+                pictureBox2.Image = pineapple;
+                pictureBox3.Image = pineapple;
                 calculateWinnings();
 
             }
@@ -202,6 +205,13 @@ namespace SlotMachineStarterCode
                 textBox2.Text = Convert.ToString(currentBalanceLabel);
                 spinWinningsLabel = 25;
                 textBox3.Text = Convert.ToString(spinWinningsLabel);
+                if (pictureBox1.Image == seven && pictureBox2.Image == pineapple && pictureBox3.Image == pineapple)
+                {
+                    currentBalanceLabel = currentBalanceLabel + 0;
+                    textBox2.Text = Convert.ToString(currentBalanceLabel);
+                    spinWinningsLabel = 0;
+                    textBox3.Text = Convert.ToString(spinWinningsLabel);
+                }
             }
             else if (pictureBox1.Image == grape && pictureBox2.Image == grape && pictureBox3.Image == grape)
             {
