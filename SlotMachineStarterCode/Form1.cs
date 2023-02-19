@@ -207,9 +207,9 @@ namespace SlotMachineStarterCode
                 textBox3.Text = Convert.ToString(spinWinningsLabel);
                 if (pictureBox1.Image == seven && pictureBox2.Image == pineapple && pictureBox3.Image == pineapple)
                 {
-                    currentBalanceLabel = currentBalanceLabel + 0;
+                    currentBalanceLabel = currentBalanceLabel + 10;
                     textBox2.Text = Convert.ToString(currentBalanceLabel);
-                    spinWinningsLabel = 0;
+                    spinWinningsLabel = 10;
                     textBox3.Text = Convert.ToString(spinWinningsLabel);
                 }
             }
