@@ -205,15 +205,16 @@ namespace SlotMachineStarterCode
                 textBox2.Text = Convert.ToString(currentBalanceLabel);
                 spinWinningsLabel = 25;
                 textBox3.Text = Convert.ToString(spinWinningsLabel);
-                if (pictureBox1.Image == seven && pictureBox2.Image == pineapple && pictureBox3.Image == pineapple)
+            
+            }
+            else if (pictureBox1.Image == seven && pictureBox2.Image == pineapple && pictureBox3.Image == pineapple)
                 {
                     currentBalanceLabel = currentBalanceLabel + 10;
                     textBox2.Text = Convert.ToString(currentBalanceLabel);
                     spinWinningsLabel = 10;
                     textBox3.Text = Convert.ToString(spinWinningsLabel);
                 }
-            }
-            else if (pictureBox1.Image == grape && pictureBox2.Image == grape && pictureBox3.Image == grape)
+                else if (pictureBox1.Image == grape && pictureBox2.Image == grape && pictureBox3.Image == grape)
             {
                 currentBalanceLabel = currentBalanceLabel + 10;
                 textBox2.Text = Convert.ToString(currentBalanceLabel);
