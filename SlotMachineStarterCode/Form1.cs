@@ -1,4 +1,6 @@
-﻿using System;
+﻿// https://github.com/DatoDgebuadze/SlotMachineStarterCode
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -189,9 +191,12 @@ namespace SlotMachineStarterCode
                 // Hint B
                 // If the timer stops, the spin is over, we should calculate our winnings
                 // call the calculateWinnings function
-                pictureBox1.Image = seven;
+
+
+                // code below was used for a testing purposes
+                /*pictureBox1.Image = seven;
                 pictureBox2.Image = pineapple;
-                pictureBox3.Image = pineapple;
+                pictureBox3.Image = pineapple;*/
                 calculateWinnings();
 
             }
@@ -263,7 +268,7 @@ namespace SlotMachineStarterCode
         {
             currentBalanceLabel= currentBalanceLabel + 5;
             textBox2.Text= Convert.ToString(currentBalanceLabel);
-            moneySpentLabel = moneySpentLabel+ 5;
+            moneySpentLabel = moneySpentLabel+ 0;
             textBox1.Text = Convert.ToString(moneySpentLabel);
         }
 
